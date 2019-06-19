@@ -19,7 +19,7 @@ body {
 .banner {
   height: 70vh;
   grid-column: 1/-1;
-  background-image: url("../Img/banner.jpg");
+  background-image: url("./banner.jpg");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
