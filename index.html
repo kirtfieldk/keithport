@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <link rel="stylesheet" type="text/css" href="./style/project.css" />
+    <link rel="stylesheet" type="text/css" href="./style/skills.css" />
     <script src="https://kit.fontawesome.com/aff4bef923.js"></script>
   </head>
     <title>Keith Kirtfield</title>
@@ -12,7 +14,7 @@
   <body>
     <div class="nav">
       <div class="grid">
-        <div class="element project">Projects</div>
+        <div class="element pro">Projects</div>
         <div class="element edu">Education</div>
         <div class="element abt">About</div>
       </div>
@@ -34,6 +36,40 @@
         home.
       </div>
     </div>
+<!-- PERSONAL PROJECTS -->
+
+    <div class="projects">
+      <div class="grid">
+        <div class="block block1">
+          <div class="full-stack-img img"></div>
+          <div class="project-title">EarthLink</div>
+          <div class="project-bio">
+            EarthLink remains my greatest project to date. It is a full stack application useing React, 
+            Redux, and Node. My backend, Node, stored and fetched information from my Mongoose database
+            so that my react front end could use and display all information that a selected user 
+            provided. In addition, I utalized Google and Github Oauth so that a user can publish and delete 
+            their blog post as they choose. Redux was needed to store all incoming information that the front
+            end retrieved into numerouse states. 
+          </div>
+        </div>
+        <!-- SEPERATE PROJECTS -->
+        <div class="block block2">
+            <div class="react-img img"></div>
+            <div class="project-title">Youtube App</div>
+            <div class="project-bio">
+              This project explored the complexity of the React framwork and rest apis. Useing the Youtube
+              api, the user can change the state of the search as well as the state of the video playing. 
+              My app allows for actuall video playing and responnsive search results.  
+            </div>   
+          </div>
+          <!-- SEPERATE PROJCTES -->
+          <div class="block block3">
+            gefefefw
+          </div>
+      </div>
+    </div>
+
+    <!-- END OF PROJECTS -->
     <div class="skills">
       <div class="grid">
         <div class="py pd" id="python">Python</div>
@@ -82,7 +118,7 @@
     <div class="footer">
       <div class="grid">
         <div class="follow-in">
-        Follow me on </i>
+        Follow me on 
       </div>
         <div class="social-media">
           <a href = "https://www.linkedin.com/in/keithryankirtfield/">
@@ -91,6 +127,13 @@
         <a href = "#">
           <i class="fab fa-youtube"></i>
         </a>
+        <a href = "https://github.com/kirtfieldk">
+          <i class="fab fa-github-alt"></i>
+        </a>
+        </div>
+        <i class="far fa-envelope"></i>
+        <div class="email">
+            <div class="contact-email">Contact by email ~ keithryankirtfield@gmail.com</div>
         </div>
       </div>
     </div>

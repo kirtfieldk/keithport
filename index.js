@@ -21,4 +21,4 @@ const displayBio = value => {
   console.log(id)
   id.classList.remove("invis")
   id.classList.add("visable");
-};
+}
