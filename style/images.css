@@ -1,0 +1,18 @@
+.earthlink {
+  background-image: url("../img/linkedin-project-earthLink.PNG");
+  background-position: center;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.video-app {
+  background-image: url("../img/linkin-project-video\ app.PNG");
+  background-position: center;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.java {
+  background-image: url("../img/linkedin-project-employee-payout.PNG");
+  background-position: center;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
