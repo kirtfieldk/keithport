@@ -7,6 +7,9 @@ body {
   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   margin: 0;
 }
+.overflow {
+  overflow-y: hidden;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -15,7 +18,38 @@ body {
 .hide {
   font-size: 3rem;
   text-align: center;
-  margin-top: -30px;
+  /* border-style: solid; */
+  color: white;
+  /* width: 50%; */
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.18);
+}
+.success {
+  font-size: 4rem;
+  text-align: center;
+  border-style: solid;
+  border-color: green;
+  color: green;
+  /* width: 50%; */
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.success:hover {
+  animation-duration: 3s;
+  animation-name: larger;
+  animation-direction: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes larger {
+  from {
+    font-size: 4rem;
+  }
+  50% {
+    font-size: 5rem;
+  }
+  100% {
+    font-size: 4rem;
+  }
 }
 button {
   border-style: none;
@@ -35,6 +69,7 @@ li {
 .inline-block {
   margin-left: 49%;
 }
+
 .banner {
   height: 90vh;
   grid-column: 1/-1;
@@ -108,7 +143,6 @@ a,
   border-radius: 30px;
   border-style: ridge;
   border-color: black;
-  /* height: 25vh; */
 }
 .dream-jobs {
   font-weight: bolder;
@@ -124,7 +158,6 @@ a,
 
 /* Project */
 .project-block {
-  /* height: 100vh; */
   grid-column: 1/-1;
   margin: 20px 0;
   padding: 20px 0;
@@ -138,6 +171,9 @@ a,
   grid-column: 7/12;
 }
 .center {
+  grid-column: 2/12;
+}
+.full {
   grid-column: 2/12;
 }
 /* /////////////////// */
@@ -157,19 +193,84 @@ a,
   float: left;
   height: 100%;
   background-color: black;
-  width: 60%;
+  width: 100%;
 }
-.earthsis {
-  width: 40%;
-}
+
 .proj-title {
-  margin: 12px 0;
+  margin: 20% 0 0 0;
   font-weight: bolder;
   font-size: 1.3rem;
   text-align: center;
   border-bottom: solid black;
+  border-top: solid black;
+  font-size: 2rem;
+  background-color: rgba(220, 200, 255, 0.18);
+}
+.proj-title:hover {
+  background-color: white;
 }
 .proj-desc {
   width: 100%;
   line-height: 1.2rem;
+}
+/* MODEL CARD SECTION */
+.card {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  background-color: white;
+  z-index: -2;
+  background-color: rgba(220, 200, 255, 0.48);
+}
+.card-block {
+  grid-column: 4/10;
+  border-radius: 30px;
+  border: solid black;
+  background-color: white;
+  margin-top: 30vh;
+}
+.z-up {
+  z-index: 2;
+}
+.card-skill {
+}
+.small {
+  font-size: 0.5rem;
+  color: grey;
+  text-align: center;
+}
+ul li {
+  display: inline;
+  font-size: 1.3rem;
+  padding: 0 0 0 15px;
+}
+.card-title {
+  text-align: center;
+  font-size: 3rem;
+  border-bottom: solid;
+}
+.indent {
+  margin-left: 20px;
+}
+.card-desc {
+  margin: 20px 0 20px 10px;
+}
+.black {
+  color: black;
+}
+.text-left {
+  text-align: left;
+}
+.code {
+  color: lightblue;
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: center;
+  margin-left: 40%;
+}
+.code:hover {
+  color: darkblue;
+}
+.no-margin {
+  margin: 0;
 }
