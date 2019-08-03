@@ -173,9 +173,9 @@ a,
 .center {
   grid-column: 2/12;
 }
-.full {
+/* .full {
   grid-column: 2/12;
-}
+} */
 /* /////////////////// */
 .block {
   border: solid;
@@ -197,7 +197,7 @@ a,
 }
 
 .proj-title {
-  margin: 20% 0 0 0;
+  margin: 10% 0 0 0;
   font-weight: bolder;
   font-size: 1.3rem;
   text-align: center;
@@ -215,15 +215,12 @@ a,
 }
 /* MODEL CARD SECTION */
 .card {
-  position: absolute;
-  width: 100vw;
-  height: 100%;
-  background-color: white;
+  grid-column: 2/12;
   z-index: -2;
-  background-color: rgba(220, 200, 255, 0.48);
+  background-color: rgb(254, 253, 255);
 }
 .card-block {
-  grid-column: 4/10;
+  grid-column: 3/11;
   border-radius: 30px;
   border: solid black;
   background-color: white;
@@ -233,6 +230,7 @@ a,
   z-index: 2;
 }
 .card-skill {
+  grid-column: 4/10;
 }
 .small {
   font-size: 0.5rem;
@@ -245,6 +243,8 @@ ul li {
   padding: 0 0 0 15px;
 }
 .card-title {
+  grid-column: 1/-1;
+  margin-top: 20px;
   text-align: center;
   font-size: 3rem;
   border-bottom: solid;
@@ -254,6 +254,7 @@ ul li {
 }
 .card-desc {
   margin: 20px 0 20px 10px;
+  grid-column: 1/-1;
 }
 .black {
   color: black;
@@ -273,4 +274,60 @@ ul li {
 }
 .no-margin {
   margin: 0;
+}
+/* ANIMATION */
+.growth {
+  animation: growth 0.2s ease-in forwards;
+  /* animation-iteration-count: infinite; */
+}
+@keyframes growth {
+  from {
+    grid-column: 2/7;
+  }
+  25% {
+    grid-column: 2/8;
+  }
+  45% {
+    grid-column: 2/9;
+  }
+  65% {
+    grid-column: 2/10;
+  }
+  75% {
+    grid-column: 2/11;
+  }
+
+  to {
+    grid-column: 2/12;
+  }
+}
+.left-growth {
+  animation: left-growth 0.2s ease-in forwards;
+}
+@keyframes left-growth {
+  from {
+    grid-column: 7/12;
+  }
+  25% {
+    grid-column: 6/12;
+  }
+  45% {
+    grid-column: 5/12;
+  }
+  65% {
+    grid-column: 4/12;
+  }
+  75% {
+    grid-column: 3/12;
+  }
+
+  to {
+    grid-column: 2/12;
+  }
+}
+.full {
+  grid-column: 2/12;
+}
+.row {
+  grid-column: 1/-1;
 }

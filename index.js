@@ -11,6 +11,10 @@ const youtubeCard = document.querySelector("#youtube-card");
 const earthsisCard = document.querySelector("#earthsis-card");
 const employeeCard = document.querySelector("#java-card");
 
+const proj1 = document.querySelector("#proj-one");
+const proj2 = document.querySelector("#proj-2");
+const proj3 = document.querySelector("#proj-3");
+
 var y;
 // Array of buzz words
 const buzzing = [
@@ -52,8 +56,11 @@ setInterval(displayWord, 500);
 // wordShow.innerHTML = "";
 
 earthLink.addEventListener("click", () => {
-  earthLinkCard.classList.add("z-up");
   earthLinkCard.classList.remove("hidden");
+
+  proj1.classList.add("growth");
+  proj2.classList.add("left-growth");
+  console.log("called");
 });
 youtube.addEventListener("click", () => {
   youtubeCard.classList.add("z-up");
@@ -64,19 +71,6 @@ earthsis.addEventListener("click", () => {
   earthsisCard.classList.remove("hidden");
 });
 employee.addEventListener("click", () => {
-  employeeCard.classList.add("z-up");
   employeeCard.classList.remove("hidden");
-});
-projectBlock.addEventListener("click", () => {
-  earthLinkCard.classList.remove("z-up");
-  earthLinkCard.classList.add("hidden");
-
-  youtubeCard.classList.remove("z-up");
-  youtubeCard.classList.add("hidden");
-
-  earthsisCard.classList.remove("z-up");
-  earthsisCard.classList.add("hidden");
-
-  employeeCard.classList.remove("z-up");
-  employeeCard.classList.add("hidden");
+  proj3.classList.add("growth");
 });
