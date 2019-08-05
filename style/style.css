@@ -27,7 +27,7 @@ body {
 .success {
   font-size: 4rem;
   text-align: center;
-  border-style: solid;
+  border-style: solid none solid none;
   border-color: green;
   color: green;
   /* width: 50%; */
@@ -217,7 +217,9 @@ a,
 .card {
   grid-column: 2/12;
   z-index: -2;
-  background-color: rgb(254, 253, 255);
+  background-color: rgb(254, 253, 255, 0.4);
+  border: ridge white;
+  border-radius: 25px;
 }
 .card-block {
   grid-column: 3/11;
@@ -330,4 +332,61 @@ ul li {
 }
 .row {
   grid-column: 1/-1;
+}
+.shrink-left {
+  animation: shrink-left 0.2s ease-in forwards;
+}
+@keyframes shrink-left {
+  from {
+    grid-column: 2/12;
+  }
+  25% {
+    grid-column: 2/11;
+  }
+  45% {
+    grid-column: 2/10;
+  }
+  65% {
+    grid-column: 2/9;
+  }
+  75% {
+    grid-column: 2/8;
+  }
+  to {
+    grid-column: 2/7;
+  }
+}
+.shrink-right {
+  animation: shrink-right 0.2s ease-in forwards;
+}
+@keyframes shrink-right {
+  from {
+    grid-column: 2/12;
+  }
+  25% {
+    grid-column: 3/12;
+  }
+  45% {
+    grid-column: 4/12;
+  }
+  65% {
+    grid-column: 5/12;
+  }
+  75% {
+    grid-column: 6/12;
+  }
+  to {
+    grid-column: 7/12;
+  }
+}
+.fade-grow {
+  animation: fade-grow .2s ease-in forwards;
+}
+@keyframes fade-grow {
+  from {
+    height: 0;
+  }
+  to {
+    height: 50vh;
+  }
 }
