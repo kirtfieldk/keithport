@@ -182,11 +182,15 @@ a,
   background-color: rgba(255, 255, 255, 0.6);
   height: 50vh;
   margin: 15px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+  background-color: rgba(255, 255, 255, 0.87);
 }
 .block:hover {
   -webkit-box-shadow: 0 8px 6px -6px black;
   -moz-box-shadow: 0 8px 6px -6px black;
-  box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 20px -6px black;
   background-color: rgba(255, 255, 255, 0.87);
 }
 .proj-img {
@@ -380,7 +384,7 @@ ul li {
   }
 }
 .fade-grow {
-  animation: fade-grow .2s ease-in forwards;
+  animation: fade-grow 0.2s ease-in forwards;
 }
 @keyframes fade-grow {
   from {

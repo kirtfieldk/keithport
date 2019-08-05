@@ -64,7 +64,7 @@ earthLink.addEventListener("click", () => {
   earthLinkCard.classList.remove("hidden");
   earthLinkCard.classList.add("z-up");
   proj1.classList.add("growth");
-  
+
   proj2.classList.contains("left-growth")
     ? proj2.classList.add("")
     : proj2.classList.add("left-growth");
@@ -72,7 +72,6 @@ earthLink.addEventListener("click", () => {
     proj1.classList.remove("shrink-left");
   if (proj2.classList.contains("shrink-right"))
     proj2.classList.remove("shrink-right");
-
 });
 youtube.addEventListener("click", () => {
   youtubeCard.classList.add("z-up");
@@ -122,4 +121,7 @@ youtubeExit.addEventListener("click", () => {
 });
 earthsisExit.addEventListener("click", () => {
   earthsisCard.classList.add("hidden");
+});
+employeeExit.addEventListener("click", () => {
+  employeeCard.classList.add("hidden");
 });
