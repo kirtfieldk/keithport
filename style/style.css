@@ -399,6 +399,8 @@ ul li {
 }
 .bg-black{
   color: black;
+  font-size: 3rem;;
+  margin: auto;
 }
 .tech{
   grid-column: 1/-1;
@@ -406,4 +408,14 @@ ul li {
 .tech-title{
   grid-column: 2/-1;
   font-size: 3rem;
+
+}
+.subtech-title{
+  /* text-align: center;; */
+}
+.docker{
+  padding-bottom:30px ;
+}
+.docker:hover{
+  text-decoration: none;
 }
