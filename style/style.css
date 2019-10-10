@@ -394,3 +394,16 @@ ul li {
     height: 50vh;
   }
 }
+.bg-white{
+  background-color: white;
+}
+.bg-black{
+  color: black;
+}
+.tech{
+  grid-column: 1/-1;
+}
+.tech-title{
+  grid-column: 2/-1;
+  font-size: 3rem;
+}
